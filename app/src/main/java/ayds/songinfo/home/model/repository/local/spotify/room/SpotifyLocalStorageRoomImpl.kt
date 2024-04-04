@@ -38,7 +38,8 @@ internal class SpotifyLocalStorageRoomImpl(
         this.albumName,
         this.releaseDate,
         this.spotifyUrl,
-        this.imageUrl
+        this.imageUrl,
+        this.releaseDatePrecision
     )
 
     private fun SongEntity.toSpotifySong() = SpotifySong(
@@ -48,6 +49,7 @@ internal class SpotifyLocalStorageRoomImpl(
         this.albumName,
         this.releaseDate,
         this.spotifyUrl,
-        this.imageUrl
+        this.imageUrl,
+        this.releaseDatePrecision
     )
 }
