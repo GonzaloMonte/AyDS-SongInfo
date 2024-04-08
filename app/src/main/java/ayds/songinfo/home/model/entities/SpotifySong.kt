@@ -12,8 +12,6 @@ sealed class Song {
         val releaseDatePrecision : String,
         var isLocallyStored: Boolean = false,
     ) : Song() {
-
-        val year: String = releaseDate.split("-").first()
     }
 
     object EmptySong : Song()
